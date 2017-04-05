@@ -22,8 +22,8 @@ var testdbconnection = require('./routes/testdbconnection');
 var routes = require('./routes/index');
 //const express = require('express');
 
-//const app = express();
-var app = express();
+const app = express();
+//var app = express();
 
 app.set('view engine', 'jade');
 
@@ -40,9 +40,9 @@ app.use('/testdbconnection',testdbconnection);
 
 // [START hello_world]
 // Say hello!
-/*app.get('/', (req, res) => {
+app.get('/', (req, res) => {
   res.status(200).send('Bradford Technologies, DBConnection Test 1');
-});*/
+});
 // [END hello_world]
 
 app.use('/', routes);
@@ -99,7 +99,7 @@ if (module === require.main) {
   // Start the server
   const server = app.listen(process.env.PORT || 8080, () => {
     const port = server.address().port;
-    console.log(`App listening on port ${port}`);
+    console.log(`DBConnection listening on port ${port}`);
   });
   // [END server]
 }
