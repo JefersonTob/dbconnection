@@ -10,19 +10,11 @@
     "deploy": "gcloud app deploy app.yaml",
     "test": "mocha test/index.js -t 30000"
   },
-  "author": "Google Inc.- Jeferson",
+  "author": "Bradford Technologies.- Inc",
   "contributors": [
     {
-      "name": "Jon Wayne Parrott",
-      "email": "jonwayne@google.com"
-    },
-    {
-      "name": "Jonathan Simon",
-      "email": "jbsimon@google.com"
-    },
-    {
-      "name": "Jason Dobry",
-      "email": "jdobry@google.com"
+      "name": "Jeferson Tobias",
+      "email": "jeferson.bradford@gmail.com"
     }
   ],
   "license": "Apache Version 2.0",
@@ -37,7 +29,14 @@
     ]
   },
   "dependencies": {
-    "express": "^4.14.0"
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "dateformat": "^2.0.0",
+    "express": "^4.14.0",
+    "jade": "^1.11.0",
+    "morgan": "^1.8.1",
+    "mysql": "^2.13.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "mocha": "^3.0.2",
