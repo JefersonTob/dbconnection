@@ -20,7 +20,7 @@ const app = express();
 // [START hello_world]
 // Say hello!
 app.get('/', (req, res) => {
-  res.status(200).send('Bradford Technologies, DBConnection');
+  res.status(200).send('Bradford Technologies, DBConnection Test 1');
 });
 // [END hello_world]
 
